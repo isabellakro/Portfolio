@@ -6,7 +6,7 @@ My name is Isabella Kroon. I am a sophomore student at Duke Kunshan University, 
 ![My photo](./image/Isabella.jpg)
 
 
-#Projects
+## Projects
 
 | Platform | Link |
 | ------- | ------- |
