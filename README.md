@@ -3,7 +3,7 @@
 
 Hi! My name is Isabella Kroon. I am a sophomore student at Duke Kunshan University, majoring in Computation and Design with a track in Social Policy and an Environmental Sustainability concentration. I'm interested in how statistics and computation can be used to understand environmental issues and inform environmental policy.
 
-<img src="./image/MyPhoto.jpg" width="200" />
+<img src="./image/MyPhoto.jpg" width="250" />
 
 
 ## Projects
