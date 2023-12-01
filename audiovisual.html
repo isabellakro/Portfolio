@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiovisual Analysis</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header><h1>Isabella Kroon</h1>
+        <nav class="nav">
+            <a href="index.html" target="_self" title="Homepage">Home</a>
+            <a href="aboutme.html" target="_self" title="More about me">About Me</a>
+            <div class="dropdown">
+                <a href="projectpage.html" target="_self" title="See my work here">Portfolio</a>
+                <div class="dropdown-content">
+                    <ul class="dropdown-list">
+                        <li><a href="CIAresearch.html">Chinese Investments in Africa</a></li>
+                        <li><a href="audiovisual.html">Trump on Bilibili</a></li>
+                        <li><a href="fukushima.html" target="_self">Fukushima Water</a></li>
+                        <li><a href="tetris.html">Tetris</a></li>
+                        <li><a href="codequest.html">Programming Game</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="contact.html" target="_self" title="My contact info">Contact Me</a>
+            <!-- <a href="https://www.linkedin.com/in/isabellac-rkroon" target="_blank" title="LinkedIn">LinkedIn</a> -->
+        </nav>
+    </header>
+
+    <div class="text-block">
+        <h3>Audiovisual Analysis: Trump On Bilibili</h3> August 2023
+        <p>Scraping audiovisual data from Bilibili videos to analyze trends in video data and sentiment towards Donald Trump. 
+            <br><i>Note: this is an ongoing project</i>
+        </p>
+    </div>
+    
+    <main>
+        <div class="text-image-block">
+            
+            <h4>Example video:</h4>
+            <video controls src="audiovis/YouTube15938924.mp4" height="200"></video>
+            <br>
+            <ol>
+                <li>Extract video frames and video audio in Python as objects for OOP</li>
+                <li>For each frame, calculate dominant color, brightness, and entropy</li>
+                <li>For audios, calculate loudness and BPM</li>
+                <li><i>Ongoing:</i> identify faces and analyze emotion using DeepFace AI</li>
+            </ol>
+            <p>
+                <img src="images/faceanalysisoutput.png" height="100"><br>
+                More about DeepFace:<br>
+                <iframe src="https://viso.ai/computer-vision/deepface/"></iframe>
+            </p>
+            <h4>Output:</h4>
+            <p>
+            <img src="images/audiovisdata.png" height="200">
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="projectpage.html" target="_self">
+            <button>Return to Portfolio Page</button>
+        </a>
+           
+        <a href="index.html" target="_self">
+            <button>Return to Homepage</button>
+        </a>
+        <br>
+        Author: Isabella Kroon <small><a href="mailto: ick8@duke.edu">ick8@duke.edu</a></small>
+        <br>
+        &copy; 2023 copyright reserved <br> 
+    </footer>
+</body>
+</html>
