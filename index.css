@@ -48,6 +48,8 @@ a:visited{
 }
 footer{
     margin-top: auto;
+    display: flex;
+    justify-content: space-between;
 }
 body{
     font-family: 'Questrial', Georgia, 'Times New Roman', Times, serif;
