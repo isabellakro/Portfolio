@@ -232,7 +232,12 @@ button{
     display: block;
 }
 
-
+.give-outline{
+    border-style: solid;
+    border-color: #132FBA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* id tag formatting */
 
 #trump-photo{
