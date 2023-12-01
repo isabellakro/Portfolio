@@ -1,8 +1,4 @@
 @font-face{
-    src: url(fonts/RozhaOne-Regular.ttf);
-    font-family:RozhaOne;
-}
-@font-face{
     src: url(fonts/Questrial-Regular.ttf);
     font-family: Questrial;
 }
@@ -19,7 +15,7 @@
 /* header (&nav), footer, body/background */
 
 header,footer{
-    font-family: 'RozhaOne', Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: .1rem;
     width: 100%;
     background-color: #FFF6D2;
