@@ -237,6 +237,7 @@ button{
     border-color: #132FBA;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: inline-block;
 }
 /* id tag formatting */
 
