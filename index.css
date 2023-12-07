@@ -27,7 +27,7 @@ header{
     align-items: center;
     justify-content: center;
     color: #132FBA;
-    /* color: #257730; */
+    border-bottom: medium solid #799Cf0;
 }
 .nav{
     display: flex;
@@ -50,6 +50,7 @@ footer{
     margin-top: auto;
     display: flex;
     justify-content: space-between;
+    border-top: medium solid #799Cf0;
 }
 body{
     font-family: 'Questrial', Georgia, 'Times New Roman', Times, serif;
