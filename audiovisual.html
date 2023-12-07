@@ -30,35 +30,38 @@
 
     <main>
         <div class="text-block">
-            <h3>Audiovisual Analysis: Trump On Bilibili</h3> August 2023
-            <p>Scraping audiovisual data from Bilibili videos to analyze trends in video data and sentiment towards Donald Trump. 
+            <h3>Audiovisual Analysis: Trump On Bilibili</h3> 
+            <p>August 2023</p>
+            <p>
+                This project was based on previous findings that videos containing misinformation exhibited statistically 
+                significant discrepancies in both visual and audio quality when compared to reputable news sources. Extending on these
+                findings, this project aimed to understand if there were similar correlations with positive or negative representations
+                of Donald Trump on Chinese social media site Bilibili. The visual and audio attributes measured were brightness, 
+                warm or cool color dominance, entropy, audio tempo (BPM), and loudness.
             </p>
         </div>
-        
-        <div class="text-image-block">
-            <h4>
-                Project outline:
-            </h4>
-            <ol>
-                <li>Extract video frames and video audio in Python and process with object-oriented programming</li>
-                <li>For each frame, calculate dominant color, brightness, and entropy</li>
-                <li>For audios, calculate loudness and BPM</li>
-                <li><i>Ongoing:</i> Identify faces and analyze emotions using DeepFace AI</li>
-            </ol>
-            <div class="give-outline">
-                <img src="images/trump_angry.png" id="trump-photo" width="400" alt="An image of Donald Trump, who looks angry.">
-                <br>
-                <img src="images/faceanalysisoutput.png" width="400" 
-                alt="Face Analysis output. Reads: Is Trump: True. Dominant emotion: angry." ><br>
-            </div>
 
-            <h4>Output:</h4>
-            <p>
-            <img src="images/audiovisdata.png" height="200" alt="table of results. categories: file name, dominant color,
-                brightness, entropy, tempo (BPM), loudness, processing time">
-            </p>
+        <div class="text-image-block">
+            <div class="float-left">
+                <div class="give-outline">
+                    <img src="images/trump_angry.png" id="trump-photo" width="400" alt="An image of Donald Trump, who looks angry.">
+                    <br>
+                    <img src="images/faceanalysisoutput.png" width="400" 
+                    alt="Face Analysis output. Reads: Is Trump: True. Dominant emotion: angry." ><br>
+                </div>
+            </div>
+            <div class="content-text">
+                <p>
+                    I began by scraping the data from previously collected Bilibili videos. Using the open source computer vision package OpenCV, 
+                    I created a Python program that would extract video frames and audio data and process them using object-oriented programming. For each 
+                    frame, the program would calculate the previously mentioned attributes and write them into a CSV file. For the next phase of this project,
+                    I will be identifying faces and analyzing their emotions using DeepFace AI.
+                </p>
+            </div>
+            <img src="images/audiovisdata.png" height="200">
         </div>
     </main>
+
 
     <footer>
         <div>
