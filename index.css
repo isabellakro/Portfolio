@@ -153,39 +153,7 @@ button{
     padding: 1rem;
     font-size: 110%;
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: auto;
-    grid-auto-flow: dense;
-    justify-content: center;
-    align-content: center;
-    padding: 10px;
-    grid-auto-flow: dense;
-    grid-gap: 1rem;
-}
-.grid-item{
-    align-self: center;
-    justify-self: center;
-    margin: 3% auto;
-    padding: 1.2%;
-    width: 90%;
-    height: fit-content;
-    object-fit: cover;
-    border-style: solid;
-    border-width: medium;
-    background-color: #fffefa;
-    border-color: #799Cf0;
-    box-shadow: 8px 8px #4966aa;
-    font-size: 120%;
-}
-.wide{
-    grid-column: span 2;
-}
-.big-square{
-    grid-row: span 2;
-    grid-column: span 2;
-}
+
 /* section */
 
 .split-column{
@@ -196,19 +164,50 @@ button{
     float: left;
     padding: 2rem;
 }
-
-/* flex container */
-
-@media (max-width: 800px){
-    .flex-container{
-        flex-direction: column;
+/* Image gallery */
+/* Source credit: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.grid-item{
+    align-self: center;
+    justify-content: center;
+    margin: 6.5% auto;
+    padding: 1.2%;
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    border-style: solid;
+    border-width: medium;
+    background-color: #fffefa;
+    border-color: #799Cf0;
+    box-shadow: 8px 8px #4966aa;
+    font-size: 120%;
+    vertical-align: middle;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.column {
+    flex: 32%;
+    max-width: 32%;
+    padding: 1.5%;
+}
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
     }
 }
-.flex-container img{
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    max-height: 400px;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
 }
 
 /* dropdown */
@@ -253,6 +252,7 @@ button{
 #tetris-video{
     width: 30%;
     float: left;
+    margin-right: 3rem;
 }
 #my-photo{
     width: 34%;
@@ -276,7 +276,6 @@ button{
     text-align: center;
     width: fit-content;
     padding-left: 5%;
-    padding-right: 5%;
 }
 
 ul{
