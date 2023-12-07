@@ -220,9 +220,9 @@ button{
     display: none;
     position: absolute;
     background-color: #fffefa;
-    min-width: 160px;
+    min-width: 200px;
     width: fit-content;
-    padding: 30%;
+    padding: 15%;
     box-shadow: 8px 8px #4966aa;
     z-index: 1;
     border-style: solid;
