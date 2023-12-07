@@ -30,24 +30,30 @@
 
     <main>
         <div class="text-block">
-            <h3>Media Analysis: Chinese Investments in Africa</h3> June 2023
-            <p>Analyzing articles about Chinese investments in Africa for trends in keyword frequencies and sentiments.</p>
+            <h3>Media Analysis: Chinese Investments in Africa</h3> 
+            <p> June 2023 </p>
+            <br>
+            <p>
+                China has made many investments in Africa, especially for the development of railways as part of its Belt
+                and Road initiative. This project aims to understand how media outlets are covering these
+                investments, including the topics they cover (ex. the environment, perspective of politicians, impact on economy) 
+                and whether that coverage is positive, negative, or neutral.
+            </p>
         </div>
         <div class="text-image-block">
-            <ol>
-                <li>Scraping data from news sources:<br>
-                    <img src = "images/RTFsnapshot.png" alt = "A news article with a news source logo, title, date, and text" height="300">
-                </li>
-                <li>Compiling the information into useable data (including dictionary categorizations): <br>
-                    <img src="images/excelsheet.png" alt = "An excel sheet with categories: title, date, media source, text, subject" height="250">
-                </li>
-                <li>Trend analysis: <br>
-                    <div class="flex-container">
-                        <div><img src="images/percentagepermonth.png" title = "Basic Trend Analysis" alt = "A graphed trend line, the graph is titled African stakeholders percentage per month" height="300"></div>
-                        <div><img src="images/topicmodelling.png" title = "LDA Topic Modelling" alt = "Topic models, a series of bar graphs showing words that commonly appear together" height = "300"></div>
-                        <div><img src="images/sentimentanalysis.png" title = "Sentiment Analysis" alt = "A graphed trend line showing the sentiment scores of African stakeholder article titles" height="300"></div>
-                    </div>
-                </li>
+            <p>
+                First, I created a program in Python to scrape news articles to collect the article's title, media source, date, text, and keywords
+                 and to write this data into a CSV file. I was provided with keyword dictionaries, which I applied to each text to understand what topics
+                 each article was covering. Finally, I used sentiment dictionaries to provide sentiment scores to the articles and their titles.
+                  Next, I created vizualizations of the data to answer the following questions:
+            </p>
+            <ol class="image-filter-through">
+                <li>What proportion of articles each month were discussing a given topic? (Ex. African stakeholders)</li>
+                <img src="images/percentagepermonth.png" title = "Basic Trend Analysis" alt = "A graphed trend line, the graph is titled African stakeholders percentage per month" height="300">
+                <li>What was the sentiment of articles covering a given topic? (Where 0 is neutral, 1 is positive, -1 is negative)</li>
+                <img src="images/sentimentanalysis.png" title = "Sentiment Analysis" alt = "A graphed trend line showing the sentiment scores of African stakeholder article titles" height="300">
+                <li>Using unsupervised machine learning, what topics were frequently mentioned together?</li>
+                <img src="images/topicmodelling.png" title = "LDA Topic Modelling" alt = "Topic models, a series of bar graphs showing words that commonly appear together" height = "300">
             </ol>
         </div>
     </main>
