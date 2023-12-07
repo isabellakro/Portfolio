@@ -192,6 +192,10 @@ button{
     display: flex;
     justify-content: space-around;
 }
+.float-left{
+    float: left;
+    padding: 2rem;
+}
 
 /* flex container */
 
