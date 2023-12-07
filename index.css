@@ -147,7 +147,7 @@ button{
     clear: both; 
 }
 .content-text{
-    display: inline-block;
+    display: flexbox;
     vertical-align: top;
     box-sizing: border-box;
     padding: 1rem;
