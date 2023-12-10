@@ -2,37 +2,6 @@
     src: url(fonts/Questrial-Regular.ttf);
     font-family: Questrial;
 }
-/* project page - makes 2 column-layout instead of 3 columns */
-@media screen and (max-width: 800px) {
-    .split-column{
-        flex-direction: column;
-    }
-    .modal-content {
-        width: 100%;
-        }
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-    .text-block {
-        width: 90%;
-        margin: 3% auto;
-    }
-}
-/* project page - stack columns on top of each other */
-@media screen and (max-width: 600px) {
-    .split-column{
-        flex-direction: column;
-    }
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-    .grid-item{
-        width: 90%;
-        margin: 6.5% auto;
-    }
-}
 *{
     margin: 0;
     box-sizing: border-box;
@@ -354,3 +323,27 @@ img{
     display: inline-block;
     transition: 0.3s;
 }
+
+@media screen and (max-width: 800px){
+    .modal-content{
+        width: 100%;
+        }
+    .column{
+      flex: 50%;
+      max-width: 50%;
+    }
+    .text-block{
+        width: 90%;
+        margin: 1% auto;
+    }
+    .split-column{
+        flex-direction: column;
+        width: 100%;
+    }
+    .grid-item{
+        width: 90%;
+        margin: 6.5% auto;
+    }
+
+}
+
