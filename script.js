@@ -11,7 +11,7 @@ for (let image of imageArray){
     image.addEventListener(
         "mouseover",
         function(){
-            if (modal.style.display != "block"){
+            if (modal.style.display !== "block"){
                 image.style.opacity = 0.8;
                 image.style.cursor = "pointer";
             }
@@ -27,7 +27,7 @@ for (let image of imageArray){
     image.addEventListener(
         'click',
         function(){
-            if (modal.style.display != "block"){
+            if (modal.style.display !== "block"){
                 modal.style.display = "block";
                 modalImage.src = this.src;
                 captionText.innerHTML = this.alt;
