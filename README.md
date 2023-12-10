@@ -1,7 +1,9 @@
 # Portfolio-Page
-This is the portfolio website for Isabella Kroon. Within it I have included many of my recent projects. You can view the website [here](https://isabellakro.github.io/Portfolio-Page/index.html)!
+This is the GitHub repository for the portfolio website for Isabella Kroon. You can view the website [here](https://isabellakro.github.io/Portfolio-Page/index.html)!
+
 
 Credits:
+
 
 W3 Schools, especially:
 * How to Create a Responsive Image Grid: [https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
@@ -11,6 +13,8 @@ W3 Schools, especially:
 
 [LinkedIn SVG Image](https://www.svgrepo.com/svg/473701/linkedin)
 
-Troubleshooting and debugging: [ChatGPT](https://chat.openai.com/)
 
 Grid background image: [https://www.flickr.com/photos/cksample3/3977292506](https://www.flickr.com/photos/cksample3/3977292506)
+
+
+Troubleshooting and debugging: [ChatGPT](https://chat.openai.com/)
