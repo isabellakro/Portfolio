@@ -129,7 +129,7 @@ button{
     padding: 1rem;
     font-size: 110%;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
     .text-block{
         flex: 100%;
     }
