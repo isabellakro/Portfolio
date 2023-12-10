@@ -11,8 +11,8 @@
       flex: 50%;
       max-width: 50%;
     }
-    .split-column .text-block {
-        width: 100%;
+    .text-block {
+        width: 90%;
     }
 }
 /* project page - stack columns on top of each other */
