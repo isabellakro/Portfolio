@@ -2,11 +2,6 @@
     src: url(fonts/Questrial-Regular.ttf);
     font-family: Questrial;
 }
-@media screen and (max-width: 600px){
-    aside, section, article{
-        width: 100%;
-    }
-}
 *{
     margin: 0;
     box-sizing: border-box;
@@ -134,9 +129,11 @@ button{
     padding: 1rem;
     font-size: 110%;
 }
-
-/* section */
-
+@media screen and (max-width: 500px){
+    .text-block{
+        flex: 100%;
+    }
+}
 .split-column{
     display: flex;
     justify-content: space-around;
