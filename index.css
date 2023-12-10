@@ -16,10 +16,14 @@
     }
     .text-block {
         width: 90%;
+        margin: 3% auto;
     }
 }
 /* project page - stack columns on top of each other */
 @media screen and (max-width: 600px) {
+    .split-column{
+        flex-direction: column;
+    }
     .column {
       flex: 100%;
       max-width: 100%;
