@@ -122,11 +122,6 @@ button{
     display: table;
     clear: both; 
 }
-@media screen and (max-width: 800px){
-    .text-block{
-        flex: 100%;
-    }
-}
 .split-column{
     display: flex;
     justify-content: space-around;
