@@ -82,6 +82,9 @@ h3{
 h3 + p{
     font-style: italic;
 }
+p{
+    margin: 1rem;
+}
 button {
     background-color: #fffefa;
     border: solid;
