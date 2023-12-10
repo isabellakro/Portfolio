@@ -36,15 +36,13 @@ header{
 }
 .nav a{
     color: #799Cf0;
-    /* color: #91b88b; */
-    font-size: 125%;
+    font-size: 1.4rem;
 }
 a{
     color: #799Cf0;
 }
 a:visited{
     color: #799Cf0;
-    /* color: #91b88b; */
 }
 footer{
     margin-top: auto;
@@ -75,21 +73,16 @@ body::before {
 
 h1{
     margin-bottom: .3%;
-    font-size: 6vh;
+    font-size: 3.3rem;
 }
 h2{
-    font-size: 4.8vh;
+    font-size: 2rem;
     color: #132FBA;
+    padding-bottom: 10px;
 }
 h3{
-    font-size: 4vh;
+    font-size: 2.2rem;
     color: #132FBA;
-    padding-bottom: 20px;
-}
-h4{
-    font-size: 4vh;
-    color: #132FBA;
-    padding-bottom: 20px;
 }
 h3 + p{
     font-style: italic;
@@ -98,10 +91,9 @@ button{
     background-color: #fffefa;
     border: solid;
     color: #132FBA;
-
 }
 #button{
-    background-color: #fbf6e4;
+    background-color: #fffcf0;
     border: solid;
     color: #132FBA;
 }
@@ -111,19 +103,7 @@ button{
     font-size: 120%;
     margin: 3% auto;
     padding: 4%;
-    width: 60%;
-    border-style: solid;
-    border-width: medium;
-    background-color: #fffefa;
-    border-color: #799Cf0;
-    box-shadow: 8px 8px #4966aa;
-    
-}
-.split-text-block{
-    font-size: 120%;
-    margin: 3% auto;
-    padding: 4%;
-    width: 45%;
+    width: 47%;
     border-style: solid;
     border-width: medium;
     background-color: #fffefa;
@@ -212,23 +192,81 @@ and https://www.w3schools.com/howto/howto_css_image_overlay_title.asp **/
     text-align: center;
 }
 
-/* When you mouse over the container, fade in the overlay title */
+/* fade in the overlay title */
 .grid-item:hover .overlay {
     opacity: 1;
 }
   
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* makes 2 column-layout instead of 3 columns */
 @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* stack on top of each other */
 @media screen and (max-width: 400px) {
     .column {
       flex: 100%;
       max-width: 100%;
+    }
+}
+
+/* modal images */
+/* source credit: https://www.w3schools.com/howto/howto_css_modal_images.asp */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.caption {
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+    width: 100%;
     }
 }
 
@@ -307,6 +345,7 @@ ul{
 img{
     max-width: 100%;
     display: inline-block;
+    transition: 0.3s;
 }
 
 
