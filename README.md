@@ -2,9 +2,13 @@
 This is the portfolio website for Isabella Kroon. Within it I have included many of my recent projects. You can view the website [here](https://isabellakro.github.io/Portfolio-Page/index.html)!
 
 Credits:
+
 W3 Schools, especially:
 * How to Create a Responsive Image Grid: [https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
 * How to Create an Image Overlay Title: [https://www.w3schools.com/howto/howto_css_image_overlay_title.asp](https://www.w3schools.com/howto/howto_css_image_overlay_title.asp)
 * How to Create Modal Images: [https://www.w3schools.com/howto/howto_css_modal_images.asp](https://www.w3schools.com/howto/howto_css_modal_images.asp)
 
+
 [LinkedIn SVG Image](https://www.svgrepo.com/svg/473701/linkedin)
+
+Troubleshooting and debugging: [ChatGPT](https://chat.openai.com/)
