@@ -4,6 +4,9 @@
 }
 /* project page - makes 2 column-layout instead of 3 columns */
 @media screen and (max-width: 800px) {
+    .split-column{
+        flex-direction: column;
+    }
     .modal-content {
         width: 100%;
         }
