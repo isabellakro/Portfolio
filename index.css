@@ -334,7 +334,7 @@ img{
     }
     .text-block{
         width: 90%;
-        margin: 1% auto;
+        margin: 3% auto;
     }
     .split-column{
         flex-direction: column;
