@@ -2,7 +2,7 @@
     src: url(fonts/Questrial-Regular.ttf);
     font-family: Questrial;
 }
-* project page - makes 2 column-layout instead of 3 columns */
+/* project page - makes 2 column-layout instead of 3 columns */
 @media screen and (max-width: 800px) {
     .modal-content {
         width: 100%;
