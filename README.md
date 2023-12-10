@@ -12,3 +12,5 @@ W3 Schools, especially:
 [LinkedIn SVG Image](https://www.svgrepo.com/svg/473701/linkedin)
 
 Troubleshooting and debugging: [ChatGPT](https://chat.openai.com/)
+
+Grid background image: [https://www.flickr.com/photos/cksample3/3977292506](https://www.flickr.com/photos/cksample3/3977292506)
