@@ -95,7 +95,7 @@ button{
 /* text & image container blocks */
 
 .text-block{
-    font-size: 120%;
+    font-size: 1.3rem;
     margin: 3% auto;
     padding: 4%;
     width: 47%;
@@ -115,19 +115,12 @@ button{
     background-color: #fffefa;
     border-color: #799Cf0;
     box-shadow: 8px 8px #4966aa;
-    font-size: 120%;
+    font-size: 1.3rem;
 }
 .text-image-block::after {
     content: "";
     display: table;
     clear: both; 
-}
-.content-text{
-    display: flexbox;
-    vertical-align: top;
-    box-sizing: border-box;
-    padding: 1rem;
-    font-size: 110%;
 }
 @media screen and (max-width: 800px){
     .text-block{
@@ -140,7 +133,7 @@ button{
 }
 .float-left{
     float: left;
-    padding: 2rem;
+    padding-right: 2rem;
 }
 /* Image gallery */
 /** Source credit: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
@@ -231,6 +224,7 @@ and https://www.w3schools.com/howto/howto_css_image_overlay_title.asp **/
     max-width: 700px;
 }
 .caption {
+    margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
@@ -310,6 +304,7 @@ and https://www.w3schools.com/howto/howto_css_image_overlay_title.asp **/
     width: 30%;
     float: left;
     margin-right: 3rem;
+    margin-bottom: 2rem;
 }
 #my-photo{
     width: 34%;
