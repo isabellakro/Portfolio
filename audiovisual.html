@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiovisual Analysis</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header><h1>Isabella Kroon</h1>
+        <nav class="nav">
+            <a href="index.html" target="_self" title="Homepage">Home</a>
+            <a href="aboutme.html" target="_self" title="More about me">About Me</a>
+            <div class="dropdown">
+                <a href="projectpage.html" target="_self" title="See my work here">Portfolio</a>
+                <div class="dropdown-content">
+                    <ul class="dropdown-list">
+                        <li><a href="CIAresearch.html">Chinese Investments in Africa</a></li>
+                        <li><a href="audiovisual.html">Trump on Bilibili</a></li>
+                        <li><a href="fukushima.html" target="_self">Fukushima Water</a></li>
+                        <li><a href="tetris.html">Tetris</a></li>
+                        <li><a href="codequest.html">CodeQuest Programming Game</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="contact.html" target="_self" title="My contact info">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="text-block">
+            <h3>Audiovisual Analysis: Trump On Bilibili</h3> 
+            <p>August 2023</p>
+            <p>
+                This project was based on previous findings that videos containing misinformation exhibited statistically 
+                significant discrepancies in both visual and audio quality when compared to reputable news sources. Extending on these
+                findings, this project aimed to understand if there were similar correlations with positive or negative representations
+                of Donald Trump on Chinese social media site Bilibili. The visual and audio attributes measured were brightness, 
+                warm or cool color dominance, entropy, audio tempo (BPM), and loudness.
+            </p>
+        </div>
+
+        <div class="text-image-block">
+            <div class="float-left">
+                <div class="give-outline">
+                    <img src="images/trump_angry.png" id="trump-photo" width="400" alt="An image of Donald Trump, who looks angry.">
+                    <br>
+                    <img src="images/faceanalysisoutput.png" width="400" alt="Face Analysis output. Reads: Is Trump: True. Dominant emotion: angry." ><br>
+                </div>
+            </div>
+            <div>
+                <p>
+                    I began by scraping the data from previously collected Bilibili videos. Using the open source computer vision package OpenCV, 
+                    I created a Python program that would extract video frames and audio data and process them using object-oriented programming. For each 
+                    frame, the program would calculate the previously mentioned attributes and write them into a CSV file. For the next phase of this project,
+                    I will be identifying faces and analyzing their emotions using DeepFace AI.
+                </p>
+            </div>
+            <img src="images/audiovisdata.png" height="225" alt="Table with a sample of the output of the data scraping. The columns are: file name, dominant color,
+                brightness, entropy, tempo (BPM), loudness, and processing time (mins)">
+            <br>
+            <p>
+                Reflections:<br>
+                This project was another opportunity to learn new skills. I was given 3 research papers to learn the methodology for collecting audiovisual data, and then
+                I had to apply it right away! This project was not without its frustrations - the first version of my Python program took over 12 hours to analyze a 30-minute
+                video! Not ideal. Thankfully, I was able to greatly cut down the processing times in further iterations, as you can see in the table! I really enjoyed the challenge this
+                project presented.
+            </p>
+        </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <a href="projectpage.html" target="_self">
+                <button>Return to Portfolio Page</button>
+            </a>
+               
+            <a href="index.html" target="_self">
+                <button>Return to Homepage</button>
+            </a>
+            <br>
+            Author: Isabella Kroon <small><a href="mailto:ick8@duke.edu">ick8@duke.edu</a></small>
+            <br>
+            &copy; 2023 copyright reserved <br>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/isabellac-rkroon" target="_blank" title="LinkedIn">
+                <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn logo" id="LinkedIn-logo" height="50">
+            </a>
+            <!-- svg source: https://www.svgrepo.com/svg/473701/linkedin -->
+        </div>
+    </footer>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div class="caption"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

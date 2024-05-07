@@ -1,0 +1,352 @@
+@font-face{
+    src: url(fonts/Questrial-Regular.ttf);
+    font-family: Questrial;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header (&nav), footer, body/background */
+
+header,footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: .1rem;
+    width: 100%;
+    background-color: #FFF6D2;
+}
+header{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #132FBA;
+    border-bottom: medium solid #799Cf0;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1%;
+}
+.nav a{
+    color: #132FBA;
+    font-size: 1.25rem;
+}
+a{
+    color: #132FBA;
+}
+a:visited{
+    color: #132FBA;
+}
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: medium solid #799Cf0;
+}
+body{
+    font-family: 'Questrial', Georgia, 'Times New Roman', Times, serif;
+    color: #0e2281;
+    background-color: #fffefa;
+    min-height: 100vh;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('images/grid.jpeg');
+}
+
+/* headline formatting */
+
+h1{
+    margin-bottom: .3%;
+    font-size: 3.3rem;
+}
+h2{
+    font-size: 2rem;
+    color: #132FBA;
+    padding-bottom: 10px;
+}
+h3{
+    font-size: 2.2rem;
+    color: #132FBA;
+}
+h3 + p{
+    font-style: italic;
+}
+p{
+    margin: 1rem;
+}
+button {
+    background-color: #fffefa;
+    border: solid;
+    color: #132FBA;
+
+}
+#button{
+    background-color: #fffcf0;
+    border: solid;
+    color: #132FBA;
+}
+/* text & image container blocks */
+
+.text-block{
+    font-size: 1.3rem;
+    margin: 3% auto;
+    padding: 4%;
+    width: 47%;
+    border-style: solid;
+    border-width: medium;
+    background-color: #fffefa;
+    border-color: #799Cf0;
+    box-shadow: 8px 8px #4966aa;
+
+}
+.text-image-block{
+    margin: 3% auto;
+    padding: 4%;
+    width: 80%;
+    border-style: solid;
+    border-width: medium;
+    background-color: #fffefa;
+    border-color: #799Cf0;
+    box-shadow: 8px 8px #4966aa;
+    font-size: 1.3rem;
+}
+.text-image-block::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.split-column{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.float-left{
+    float: left;
+    padding-right: 2rem;
+}
+
+/* Image gallery */
+/** Source credit: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+and https://www.w3schools.com/howto/howto_css_image_overlay_title.asp **/
+.grid-item{
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 6.5% auto;
+    padding: 1.2%;
+    height: fit-content;
+    object-fit: cover;
+    border-style: solid;
+    border-width: medium;
+    background-color: #fffefa;
+    border-color: #799Cf0;
+    box-shadow: 8px 8px #4966aa;
+    font-size: 120%;
+    vertical-align: middle;
+    width: 100%;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column {
+    flex: 32%;
+    max-width: 32%;
+    padding: 1.5%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* fade in the overlay title */
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+/* modal images */
+/* source credit: https://www.w3schools.com/howto/howto_css_modal_images.asp */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* dropdown */
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fffefa;
+    min-width: 200px;
+    width: fit-content;
+    padding: 8%;
+    box-shadow: 8px 8px #4966aa;
+    z-index: 1;
+    border-style: solid;
+    border-color: #799Cf0;
+}
+.dropdown-content a{
+    color: #4966aa;
+    font-size: 110%;
+    font-family: 'Questrial', Georgia, 'Times New Roman', Times, serif;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.give-outline{
+    border-style: solid;
+    border-color: #132FBA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+
+}
+
+/* id tag formatting */
+
+#trump-photo{
+    filter: grayscale(100%);
+}
+#tetris-video{
+    width: 30%;
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+#my-photo{
+    width: 34%;
+    min-width: 180px;
+    float: left;
+    padding: 2%;
+    border-radius: 100%;
+}
+#demo-video{
+    width: 90%;
+    align-self: center;
+    margin: 2rem;
+}
+#about-text{
+    font-size: 130%;
+    text-align: center;
+}
+#intro{
+    line-height: 125%;
+}
+#gallery-title{
+    text-align: center;
+    width: fit-content;
+    padding-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul{
+    list-style-type: circle;
+}
+img{
+    max-width: 100%;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 800px){
+    .modal-content{
+        width: 100%;
+        }
+    .column{
+      flex: 50%;
+      max-width: 50%;
+    }
+    .text-block{
+        width: 90%;
+        margin: 3% auto;
+    }
+    .split-column{
+        flex-direction: column;
+        width: 100%;
+    }
+    .grid-item{
+        width: 90%;
+        margin: 6.5% auto;
+    }
+
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Research: Chinese Investments in Africa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header><h1>Isabella Kroon</h1>
+        <nav class="nav">
+            <a href="index.html" target="_self" title="Homepage">Home</a>
+            <a href="aboutme.html" target="_self" title="More about me">About Me</a>
+            <div class="dropdown">
+                <a href="projectpage.html" target="_self" title="See my work here">Portfolio</a>
+                <div class="dropdown-content">
+                    <ul class="dropdown-list">
+                        <li><a href="CIAresearch.html">Chinese Investments in Africa</a></li>
+                        <li><a href="audiovisual.html">Trump on Bilibili</a></li>
+                        <li><a href="fukushima.html" target="_self">Fukushima Water</a></li>
+                        <li><a href="tetris.html">Tetris</a></li>
+                        <li><a href="codequest.html">CodeQuest Programming Game</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="contact.html" target="_self" title="My contact info">Contact Me</a>
+            <!-- <a href="https://www.linkedin.com/in/isabellac-rkroon" target="_blank" title="LinkedIn">LinkedIn</a> -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="text-block">
+            <h3>Media Analysis: Chinese Investments in Africa</h3> 
+            <p> June 2023 </p>
+            <br>
+            <p>
+                China has made many investments in Africa, especially for the development of railways as part of its Belt
+                and Road initiative. This project aims to understand how media outlets are covering these
+                investments, including the topics they cover (ex. the environment, perspective of politicians, impact on economy) 
+                and whether that coverage is positive, negative, or neutral.
+            </p>
+        </div>
+        <div class="text-image-block">
+            <p>
+                First, I created a program in Python to scrape news articles to collect the article's title, media source, date, text, and keywords
+                 and to write this data into a CSV file. I was provided with keyword dictionaries, which I applied to each text to understand what topics
+                 each article was covering. Finally, I used sentiment dictionaries to provide sentiment scores to the articles and their titles.
+                  Next, I created vizualizations of the data to answer the following questions:
+            </p>
+            <ol class="image-filter-through">
+                <li>
+                    <p>What proportion of articles each month were discussing a given topic? (Ex. African stakeholders)</p>
+                    <img src="images/percentagepermonth.png" title = "Basic Trend Analysis" alt = "A graphed trend line, the graph is titled African stakeholders percentage per month" height="300">
+                </li>
+                <li>
+                    <p>What was the sentiment of articles covering a given topic? (Where 0 is neutral, 1 is positive, -1 is negative)</p>
+                    <img src="images/sentimentanalysis.png" title = "Sentiment Analysis" alt = "A graphed trend line showing the sentiment scores of African stakeholder article titles" height="300">
+                </li>
+                <li>
+                    <p>Using unsupervised machine learning, what topics were frequently mentioned together?</p>
+                    <img src="images/topicmodelling.png" title = "LDA Topic Modelling" alt = "Topic models, a series of bar graphs showing words that commonly appear together" height = "300">
+                </li>
+            </ol>
+            <p>
+                Reflections: <br>
+                As the first research project I was a part of, I found this assignment very exciting. I had never done any kind of data scraping, but my problem-solving 
+                skills from previous computation classes allowed me to figure out how to solve any issues I came across. I was able to employ skills like dictionary
+                analysis, machine learning techniques, and further develop my skills in R and Python. I am grateful to the DKU Summer Research Scholars program and to my professor
+                for this opportunity!
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="projectpage.html" target="_self">
+                <button>Return to Portfolio Page</button>
+            </a>
+               
+            <a href="index.html" target="_self">
+                <button>Return to Homepage</button>
+            </a>
+            <br>
+            Author: Isabella Kroon <small><a href="mailto:ick8@duke.edu">ick8@duke.edu</a></small>
+            <br>
+            &copy; 2023 copyright reserved <br>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/isabellac-rkroon" target="_blank" title="LinkedIn">
+                <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn logo" id="LinkedIn-logo" height="50">
+            </a>
+            <!-- svg source: https://www.svgrepo.com/svg/473701/linkedin -->
+        </div>
+    </footer>
+    <div class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div class="caption"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

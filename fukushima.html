@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Analysis: Representation of the Fukushima Water Incident</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header><h1>Isabella Kroon</h1>
+        <nav class="nav">
+            <a href="index.html" target="_self" title="Homepage">Home</a>
+            <a href="aboutme.html" target="_self" title="More about me">About Me</a>
+            <div class="dropdown">
+                <a href="projectpage.html" target="_self" title="See my work here">Portfolio</a>
+                <div class="dropdown-content">
+                    <ul class="dropdown-list">
+                        <li><a href="CIAresearch.html">Chinese Investments in Africa</a></li>
+                        <li><a href="audiovisual.html">Trump on Bilibili</a></li>
+                        <li><a href="fukushima.html" target="_self">Fukushima Water</a></li>
+                        <li><a href="tetris.html">Tetris</a></li>
+                        <li><a href="codequest.html">CodeQuest Programming Game</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="contact.html" target="_self" title="My contact info">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="text-block">
+            <h3>Media Analysis: Representation of the Fukushima Water Incident</h3> 
+            <p>July 2023</p>
+            <p>
+                Japan's recently announced plans to release treated wastewater from its Fukushima Nuclear Plant back to the ocean has created controversy globally.
+                 In this project, I produced preliminary findings on how Western, Chinese, and Japanese news sources differed in their representations of the incident.
+            </p>
+        </div>
+        <div class="text-image-block">
+            <p>
+                After collecting news articles in Lexis-Nexis, I created a program in Python to scrape each of the articles to collect 
+                the article's title, media source, date, text, and keywords and to write this data into a CSV file. The media sources were
+                sorted into four categories: Chinese media, Japanese media, Western media, and other media.
+                Next, I created vizualizations of the data to answer the following questions:
+            </p>
+            <br>
+            <ol class="image-filter-through">
+                <li>
+                    <p>Per month, how frequently were media sources covering the Fukushima water incident?</p>
+                    <img src="images/fukushimaq1.png" height="300" alt="4 scatterplot graphs with trendlines, 
+                    frequency of articles per month separated by media source">
+                </li>
+                <li>
+                    <p>How frequently were media sources discussing the environment or politics when covering the Fukushima water incident?</p>
+                    <img src="images/fukushimaq2.png" height="300" alt="4 trendline graphs showing the frequency of environmental and political
+                    keywords by media source">
+                </li>
+                <li>
+                    <p>What proportion of articles covering the Fukushima water incident discussed the environment or politics?</p>
+                    <img src="images/fukushimaq3.png" height="300" alt="4 trendline graphs showing the proportion of articles with environmental
+                    or political keywords per month, separated by media source">
+                </li>
+                <li>
+                    <p>Using unsupervised machine learning, what topics were frequently mentioned together?</p>
+                    <img src="images/fukushimaq4.png" height="300" alt="topic models, 10 groups of words">
+                </li>
+            </ol>
+            <p>
+                Reflection: <br>
+                This project allowed me to further systematize the data scraping program I developed for my first Research Assistant
+                project so that it could be applied to any set of RTF collection. In addition, I got more involved with the media analysis aspect of my professor's
+                work as we investigated how a politically-charged event was covered differently around the world.
+            </p>
+        </div>
+    </main>
+    
+    <footer>
+        <div>
+            <a href="projectpage.html" target="_self">
+                <button>Return to Portfolio Page</button>
+            </a>
+               
+            <a href="index.html" target="_self">
+                <button>Return to Homepage</button>
+            </a>
+            <br>
+            Author: Isabella Kroon <small><a href="mailto:ick8@duke.edu">ick8@duke.edu</a></small>
+            <br>
+            &copy; 2023 copyright reserved <br>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/isabellac-rkroon" target="_blank" title="LinkedIn">
+                <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn logo" id="LinkedIn-logo" height="50">
+            </a>
+            <!-- svg source: https://www.svgrepo.com/svg/473701/linkedin -->
+        </div>
+    </footer>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content">
+        <div class="caption"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
