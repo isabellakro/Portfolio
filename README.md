@@ -1,5 +1,5 @@
 # Portfolio-Page
-This is the GitHub repository for the portfolio website for Isabella Kroon. You can view the website [here](https://isabellakro.github.io/Portfolio-Page/index.html)!
+This is the GitHub repository for the portfolio website for Isabella Kroon. You can view the website [here](https://isabellakro.github.io/Portfolio/)!
 
 
 Credits:
